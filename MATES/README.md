@@ -79,7 +79,7 @@ Estos números decimales que no son exactos ni periódicos se caracterizan por t
 
 Obsérvese que el conjunto de números irracionales es el complementario del conjunto de números racionales.
 
-Algunos ejemplos de números irracionales son ![formula](https://render.githubusercontent.com/render/math?math=sqrt{2})$\sqrt{2}$, $\pi$, $\sqrt[3]{5}$ donde por ejemplo $\pi$ = 3.1415926535... proviene de la relación entre la longitud de una circunferencia y su diámetro.
+Algunos ejemplos de números irracionales son ![formula](https://render.githubusercontent.com/render/math?math=\sqrt{2}),$\sqrt{2}$, $\pi$, $\sqrt[3]{5}$ donde por ejemplo $\pi$ = 3.1415926535... proviene de la relación entre la longitud de una circunferencia y su diámetro.
 
 ### **Números reales ℝ**
 
