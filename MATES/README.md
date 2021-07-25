@@ -103,3 +103,6 @@ Resulta así de manera natural una correspondencia entre los puntos de la recta 
 Simbología de conjuntos
 
 ![not found](img/img-5.png)
+
+> los divisores de un número son aquellos números que dividiendo al primero da resto 0
+> Div(4)= {1,2,4} // divisores de 4 son 1 2 4
