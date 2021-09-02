@@ -145,6 +145,7 @@ no hay ningún número que multiplicado por 0 nos de el dividendo por eso se dic
 ## Por qué no podemos dividir 0 por 0
 
 Es el mismo cuento, si tenemos
+<span style="font-size: 1.5rem;color:red">![formula](https://render.githubusercontent.com/render/math?math=\Large\frac{0}{0}=c\Longleftrightarrow\0=0*c)</span>
 
 ![formula](https://render.githubusercontent.com/render/math?math=\Large\frac{0}{0}=c\Longleftrightarrow\0=0*c)
 
