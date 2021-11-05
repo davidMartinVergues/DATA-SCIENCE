@@ -5,10 +5,14 @@
   - [**Números irracionales I**](#números-irracionales-i)
   - [**Números reales ℝ**](#números-reales-ℝ)
   - [Número complejo](#número-complejo)
+- [Aritmética básica](#aritmética-básica)
+  - [Potenciación](#potenciación)
 - [Álgegra](#álgegra)
 - [Geometría](#geometría)
   - [Teorema de pitágoras](#teorema-de-pitágoras)
 - [Estadísica](#estadísica)
+  - [Estadística descriptiva vs estadística inferencial](#estadística-descriptiva-vs-estadística-inferencial)
+    - [](#)
   - [Population vs sample](#population-vs-sample)
   - [Datos](#datos)
   - [Visualización de los datos Categóricos](#visualización-de-los-datos-categóricos)
@@ -126,6 +130,43 @@ Un número imaginario es aquel <span style="font-size: 1.3rem;color:red">cuyo cu
 Ejemplo de número complejo: ![formula](https://render.githubusercontent.com/render/math?math=\huge\7-8i) 
 >la resta puede ser entendida como la suma con un número negativo
 
+# Aritmética básica
+
+## Potenciación
+
+![not found](img/13.png)
+
+porque a⁰ = 1
+
+Cuando dividimos potencias el resultado es la resta de sus exponentes si esa resta da 0, por ejemplo: 
+
+2²/ 2² = 4/4 = 1   
+2²/ 2² = 2²-² = 2⁰ 
+
+así tenemos que 1 = 2⁰ 
+
+Si queremos operar con potencias con el mismo índice pero base diferente hacemos
+
+2²*3² = (2 * 3)² =36
+
+2² / 3² = (2/3)²
+
+Si tanto la base como el índice son diferentes hacemos:
+
+a² * b³ = (a * b)³ * a²-3
+
+Si dividimos potencias de distinta base, buscamos terminos comunes
+
+4¹² / 2⁸ = (2²)¹² / 2⁸ = 2²⁴ / 2⁸ = 2²⁴-⁸ = 2¹⁶ 
+
+Si no podemos sacar factores comunes
+
+3⁸ / 2² = 3²*⁴ / 2 ² = (3⁴)² / 2² = (3⁴ / 2 )² = (81/2)²
+
+
+
+
+
 # Álgegra
 
 Simbología de conjuntos
@@ -168,81 +209,8 @@ y lo mismo restando y2 - y1 q su X es 0
 ![not found](img/12.png)
 
 
-# Estadísica
-
-## Population vs sample
-
-**Population** es la colección de todos los items de interés y está representado por la letra `N` y lo número que obtenemos de esa población 
-son los  `parámetros`.
-
-**sample/muestra** es un subgrupo dentro de la población representado por una `n ` y los valores que obtenemos cuando trabajamos con 
-la muestra es lo que llamamos `estadísticas`
-
-Según estas difiniciones la población es difícil de efinir y de obserar en el mundo real por eso se usa una muestra de la población a 
-estudio. 
-
-La muestra debe ser:
-
-1. aleatoria      -> todos los miembros que forman parte de la población tienen la misma probabilidad de ser escogidos para formar parte de la muestra
-2. representativo -> es que la muestra debe refleja todos los miembros de la población a estudio
-
-## Datos
-
-Los datos los podemos clasificar según son:
-
-1. Tipos de datos
-   1. Datos categóricos -> describe grupos/categorias normalmente la respuesta a la pregunta es sí/no (grupo de estudiantes que tienen coche propio)
-   2. Datos numéricos
-      1. Discretos -> los valores que los representan son valores enteros (cuantos hijos tienen las familias USA o el dinero)
-      2. Continuos -> son valores infinitos e impossibles de medir. El peso de un individuo, en primer lugar podemos aumentar o disminuir la precisión (tantos digitos como decimales), 
-                      el valor nunca es estable va variando en pequeñas cantidades (cada gota de sudor cambia tu peso) por eso decimos que son continuos. También son continuos la altura, el área, distancias y tiempo 
-
-2. Nivel de medida - cómo se miden
-   1. cualitativos
-      1. Nominal -> definen las categorias por ejmplo diferentes marcas de autos (audio,bmw,...) No son números y no pueden ser ordenados
-      2. Ordinal -> son grupos o categorias que siguen un estricto orden, por ejemplo categorizar las comidas éstas puedes ser desagradables-no apetitosas-neutras-sabrosas-diliciosas 
-                    no son números pero se pueden ordenar de en una escala de negativo a positivo (este sistema de medida es cualitativo)
-   
-   2. cuantitativos
-      1. Intervales
-      2. Ratios
-      Ambos son representados por números pero la principal diferencia es que los `ratios` tienen un verdadero 0 mientras que los intervalos no!
-
-## Visualización de los datos Categóricos
-
-Podemos organizar los datos en una tabla de frecuencias, sería como recopilar los datos absolutos. Esos datos los podemos pintar en un esquema de barras. Si queremos dibujaros en un deagrama circular debemos obtener la frecuencia relativa
-de cada valor (porcentaje respecto del total)
-
-![not found](img/7.png)
-
-![not found](img/8.png)
-
-Las frecuencias relativas las podemos expresar en un pie chart
-
-![not found](img/9.png)
-
-Tenemos un tipo especial de diagrama el `Pareto diagram `  es como un diagrama de barras pero las categorias se muestran ordenadas en orden descendiente
-según sus frecuencias añaiendo una curva que representa la frecuencia acumulativa ésto es, una vez ordenadas las categorias, sumamos la frecuencia relativa de cada categoria 
-hasta llegar al 100 %.
-
-![not found](img/11.png)
-La curva se lee con el eje de la izquierda
-
-El diagrama de pareto nos muestra como los subtotales van cambiando con cada categoria adicional y nos da una mejor comprensión de nuestros datos.
-
-
-Pareto a parte de invenar ese diagrama tb inventó la regla de pareto que decía `el 80 % de los efectos pueden ser explicados por el 20 % de las causas` por ejemplo microsoft arreglo el 20 % de sus bugs o que solucionó el 80 % de los problemas de sus usuarios
-
-La frecuencia es el número que parece cada item (por ejemplo el número de unidades vendidas de un modelo concreto respecto el total de ventas)
-
-## Visualización de los datos Numéricos
-
 
 # Curiosidades
-
-
-
-
 ## Por qué no podemos dividir por 0
 
 El cociente de una división entre dos números reales, a y b, es un número c que multiplicado por el divisor(b) nos da el dividendo(a)
