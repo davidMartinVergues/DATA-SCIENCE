@@ -10,17 +10,17 @@
 - [Álgegra](#álgegra)
 - [Geometría](#geometría)
   - [Teorema de pitágoras](#teorema-de-pitágoras)
-- [Estadísica](#estadísica)
-  - [Estadística descriptiva vs estadística inferencial](#estadística-descriptiva-vs-estadística-inferencial)
-    - [](#)
-  - [Population vs sample](#population-vs-sample)
-  - [Datos](#datos)
-  - [Visualización de los datos Categóricos](#visualización-de-los-datos-categóricos)
-  - [Visualización de los datos Numéricos](#visualización-de-los-datos-numéricos)
 - [Curiosidades](#curiosidades)
   - [Por qué no podemos dividir por 0](#por-qué-no-podemos-dividir-por-0)
   - [Por qué no podemos dividir 0 por 0](#por-qué-no-podemos-dividir-0-por-0)
   - [Cuidado con los despejes de raiz cuadrada y potencias de 2](#cuidado-con-los-despejes-de-raiz-cuadrada-y-potencias-de-2)
+- [Data science math skills - coursera](#data-science-math-skills---coursera)
+  - [Basic vocabulary](#basic-vocabulary)
+    - [What is a set?](#what-is-a-set)
+      - [Intersection](#intersection)
+      - [Union](#union)
+    - [Example of medical testing](#example-of-medical-testing)
+    - [Sets - Venn Diagrams](#sets---venn-diagrams)
 
 ---
 
@@ -198,7 +198,6 @@ Sería la raíz cuadrada de la suma de las diferencias de sus coordenadas al cua
 
 
 
-
 La distancia del segmento azul sería x2-x1  
 La distancia del segmento verd sería y2-y1
 
@@ -259,6 +258,112 @@ Así![formula](https://render.githubusercontent.com/render/math?math=\Large\sqrt
 Expresión gráfica de los valores absolutos, se expresan como la distancia al origen sobre la recta, es decir el 0.
 
 ![not found](img/6.png)
+
+# Data science math skills - coursera
+
+Link to [Data science math skills course](https://www.coursera.org/learn/datasciencemathskills/home/welcome)
+
+## Basic vocabulary
+
+### What is a set?
+
+`A = {1, 2, -3, 7}`  
+
+`B = {apple,monkey, David}`
+
+A set is a collection of things. A set is made up of elements, to indicate if a element is in a set we can write:
+
+- `2 ∊ A` it means 2 is an element of A 
+- ![formula](https://render.githubusercontent.com/render/math?math=\Large\8\notin\A) 8 is not in A
+
+Sets has `cardinality`, the cardinality of A is the number of elements in it, we can write cardinality as:
+-  `|A| = 4`
+
+If we have this three sets:  
+`A= {1,2,-3,7} `  
+`B= {2,8,-3,10} `  
+`C= {5,10} `  
+
+#### Intersection
+
+we can say that there are elements that appear in more than one set, we can diffine a new set using intersection simbol:
+
+- ![formula](https://render.githubusercontent.com/render/math?math=\Large\A\cap\B\=\\{2,-3\\})
+- ![formula](https://render.githubusercontent.com/render/math?math=\Large\B\cap\C\=\\{10\\})
+- ![formula](https://render.githubusercontent.com/render/math?math=\Large\A\cap\C\=\emptyset) (the empty set so cardinality |![formula](https://render.githubusercontent.com/render/math?math=\Large\emptyset) | =0)
+
+so we can write it as a general expression as:
+
+- ![formula](https://render.githubusercontent.com/render/math?math=\Large\A\cap\B\=\\{x:x\in\A\and\x\in\B\\})  
+- a resulted set of intersection between a and b is a number x:(the semicolon means x must follow next condition) is in both sets A and B.
+
+#### Union
+
+
+- ![formula](https://render.githubusercontent.com/render/math?math=\Large\A\cup\B\=\\{1,2,-3,7,8,10\\})
+
+so:
+
+- ![formula](https://render.githubusercontent.com/render/math?math=\Large\A\cup\B\=\\{x:x\in\A\or\x\in\B\\})
+
+### Example of medical testing
+
+we have a syndrome called VBS (very bad syndrome) and we want to make a clinical trial.
+
+- VBS = very bad syndrome 
+- Z = set of people in a clinical trial 
+- ![formula](https://render.githubusercontent.com/render/math?math=\Large\S=\\{x\in\Z:x\\has\VBS\\})
+ 
+
+- ![formula](https://render.githubusercontent.com/render/math?math=\Large\H=\\{x\in\Z:x\\hasnot\VBS\\})
+
+so:
+
+- ![formula](https://render.githubusercontent.com/render/math?math=\Large\Z=\S\cup\H) (union)
+
+- ![formula](https://render.githubusercontent.com/render/math?math=\Large\S\cap\H\=\emptyset) (intersection)
+
+we can define two new sets according to test results:
+
+- ![formula](https://render.githubusercontent.com/render/math?math=\Large\P=\\{x\in\Z\|\x\test\positive\for\VBS\\})
+
+- ![formula](https://render.githubusercontent.com/render/math?math=\Large\N=\\{x\in\Z\|\x\test\negative\for\VBS\\})
+
+so: 
+
+- ![formula](https://render.githubusercontent.com/render/math?math=\Large\Z=\P\cup\N) (union)
+
+- ![formula](https://render.githubusercontent.com/render/math?math=\Large\P\cap\N\=\emptyset) (intersection)
+
+In a ideal world `S = P` and `H = N` but we have 4 situation:
+
+- ![formula](https://render.githubusercontent.com/render/math?math=\Large\S\cap\P)(True positives )
+- ![formula](https://render.githubusercontent.com/render/math?math=\Large\H\cap\N)(True negatives)
+- ![formula](https://render.githubusercontent.com/render/math?math=\Large\S\cap\N)(False negative)
+- ![formula](https://render.githubusercontent.com/render/math?math=\Large\H\cap\P)(false Positive)
+
+The intereting thing is comaparing the cardinalities of these 4 sets :
+
+1. |S| / |X| = proportion of people in the study who has VBS
+2. |H| / |X| = proportion of people in the study without VBS
+3. ![formula](https://render.githubusercontent.com/render/math?math=\Large\|S\cap\P|\/|S|) = true positive rate, idealy would be near to 1  
+4. ![formula](https://render.githubusercontent.com/render/math?math=\Large\|H\cap\P|\/|H|) = False positive rate, idealy would be near to 0  
+5. ![formula](https://render.githubusercontent.com/render/math?math=\Large\|S\cap\N|\/|S|) = False negative rate, idealy would be near to 0  
+6. ![formula](https://render.githubusercontent.com/render/math?math=\Large\|H\cap\N|\/|H|) = True negative rate, idealy would be near to 1
+
+### Sets - Venn Diagrams
+
+![not found](img/18.png)
+
+inclusion-exclusion Formula: 
+
+![formula](https://render.githubusercontent.com/render/math?math=\Large\|A\cup\B|\=|A|) + ![formula](https://render.githubusercontent.com/render/math?math=\Large\|B|-|A\cap\B)
+
+
+
+
+  
+  
 
 
 
