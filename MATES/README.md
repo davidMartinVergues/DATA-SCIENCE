@@ -29,7 +29,8 @@
   - [Sigma notation - summation](#sigma-notation---summation)
     - [Rules for manipulating sigma notation](#rules-for-manipulating-sigma-notation)
   - [Mean and veriance](#mean-and-veriance)
-  - [Cartesian Plane - R²](#cartesian-plane---r)
+  - [Cartesian Plane](#cartesian-plane)
+    - [Distance on the plane](#distance-on-the-plane)
 
 ---
 
@@ -520,9 +521,9 @@ the terms ![formula](https://render.githubusercontent.com/render/math?math=\Larg
 
 ![formula](https://render.githubusercontent.com/render/math?math=\Large\sigma_x=\Large\sqrt{\sigma_x^2})
 
-## Cartesian Plane - R²
+## Cartesian Plane
 
-Cartesian plane is made by two axis, X and Y 
+Cartesian plane or R² is made by two axis, X and Y 
 
 We define:
 
@@ -537,5 +538,20 @@ These two axis define 4 quadrants:
  - Third quadrant -> ((x,y) € R²: x<0, y<0)
  - Fourth quadrant-> ((x,y) € R²: x>0, y<0)
 
+### Distance on the plane
 
+- The distance formula
+- Nearest neighbors
+- clustering
+
+1. The distance formula
+
+To determinate the distance between two points on a plane we must use the [Teorema de pitagoras](#teorema-de-pitagoras), which says h² = c²+c² 
+
+2. closer neighbors 
+
+If we have diferents points on a plane we can get the distance between them and one specific point, for instance point A. That gives us a set of a distance from point A to the others.
+```
+s= {O,B,D}
+```
 
